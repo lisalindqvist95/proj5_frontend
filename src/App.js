@@ -51,6 +51,16 @@ function App() {
               />
             )}
           />
+          <Route
+            exact
+            path="/pinned"
+            render={() => (
+              <PostsPage
+                message="No results found. Adjust the search keyword or pin a post."
+                filter={`pins__owner__profile=${profile_id}&ordering=-pins__created_at&`}
+              />
+            )}
+          />
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/posts/create" render={() => <PostCreateForm />} />

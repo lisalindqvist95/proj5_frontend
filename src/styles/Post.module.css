@@ -22,3 +22,15 @@
   .HeartOutline:hover {
     color: #d063a6;
   }
+
+  .Pin {
+    color: #d063a6;
+  }
+  
+  .Pin:hover {
+    color: #ca037d;
+  }
+  
+  .PinOutline:hover {
+    color: #d063a6;
+  }

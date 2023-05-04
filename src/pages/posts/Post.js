@@ -16,6 +16,8 @@ const Post = (props) => {
     comments_count,
     likes_count,
     like_id,
+    pins_count,
+    pin_id,
     title,
     content,
     image,
@@ -57,6 +59,22 @@ const Post = (props) => {
     }
   };
 
+  const handlePin = async () => {
+    try {
+      const { data } = await axiosRes.post("/pins/", { post: id });
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? { ...post, pins_count: post.pins_count + 1, pin_id: data.id }
+            : post;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const handleUnlike = async () => {
     try {
       await axiosRes.delete(`/likes/${like_id}/`);
@@ -65,6 +83,22 @@ const Post = (props) => {
         results: prevPosts.results.map((post) => {
           return post.id === id
             ? { ...post, likes_count: post.likes_count - 1, like_id: null }
+            : post;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handleUnpin = async () => {
+    try {
+      await axiosRes.delete(`/pins/${pin_id}/`);
+      setPosts((prevPosts) => ({
+        ...prevPosts,
+        results: prevPosts.results.map((post) => {
+          return post.id === id
+            ? { ...post, pins_count: post.pins_count - 1, pin_id: null }
             : post;
         }),
       }));
@@ -123,6 +157,23 @@ const Post = (props) => {
             </OverlayTrigger>
           )}
           {likes_count}
+          { pin_id ? (
+            <span onClick={handleUnpin}>
+               <i className={`fa-solid fa-thumbtack ${styles.Thumbtack}`} />
+            </span>
+          ) : currentUser ? (
+            <span onClick={handlePin}>
+              <i className={`fa-solid fa-thumbtack ${styles.ThumbtackOutline}`} />
+            </span>
+          ) : (
+            <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>Log in to pin posts!</Tooltip>}
+            >
+               <i class="fa-solid fa-thumbtack"></i>
+            </OverlayTrigger>
+          )}
+          {pins_count}
           <Link to={`/posts/${id}`}>
             <i className="far fa-comments" />
           </Link>
