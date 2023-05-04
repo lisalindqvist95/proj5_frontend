@@ -1,18 +1,18 @@
 .App {
   font-family: 'Cutive Mono', monospace;
-  background-color: #f5ebf4;
+  background-color: #ebafcf;
   min-height: 100vh;
 }
 
 .Main {
-  padding-top: 81px;
+  padding-top: 101px;
 }
 
 .Content {
-  background-color: #ffffff;
+  background-color: #ffeff8;
   padding: 10px;
   border-radius: 2px;
-  border: 1px solid #dadadf;
+  border: 1px solid #dbced6;
 }
 
 .FillerImage {
@@ -38,10 +38,12 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #d063a6;
+  transition: color ease-in-out 0.3s;
 }
 
-a:hover i {
-  color: #dd64c7;
+a:hover i   {
+  color: #d063a6;
   transition: color ease-in-out 0.3s;
 }
 
@@ -50,7 +52,7 @@ input[type="file"] {
 }
 
 i {
-  color: #cfced3;
+  color: #dbced6;
   font-size: 1.6rem;
   padding: 7px;
   vertical-align: middle;
@@ -59,7 +61,7 @@ i {
 i:hover {
   cursor: pointer;
   transition: color ease-in-out 0.3s;
-  color: #dd64c7;
+  color: #d063a6;
 }
 
 figure {
@@ -72,7 +74,7 @@ figure {
   width: 5px;
 }
 *::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #ffeff8;
 }
 *::-webkit-scrollbar-thumb {
   background: #888;
