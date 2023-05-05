@@ -1,3 +1,13 @@
+#Glimpse
+
+Glimpse is a content sharing app for makeup related content. It is not finnished I'm so sorry.
+Bugs include logout and pinned function not working. 
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,
