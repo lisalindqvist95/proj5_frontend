@@ -374,7 +374,7 @@ Tables Generator: Used to create markdown table
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 - [React JS](https://react.dev/learn)
 - [Stack Overflow](https://stackoverflow.com/)
-- [Code Institute - Moments Walkthrough Project](https://github.com/Code-Institute-Solutions/moments/tree/304244f540308ff4dd3c961352f55a633a4b3bed)
+- [Code Institute - Moments Walkthrough Project](https://github.com/Code-Institute-Solutions/moments/)
 - [Unsplash](https://unsplash.com/)
 - [Adobe stock](https://stock.adobe.com/) 
 - [Tables Generator](https://www.tablesgenerator.com/markdown_tables): Used to create markdown table
