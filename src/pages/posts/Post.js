@@ -7,6 +7,10 @@ import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
 
+/** CREDIT: Adapted from the Code Institute Moments Tutorial Project
+ * https://github.com/Code-Institute-Solutions/moments/
+*/
+
 const Post = (props) => {
   const {
     id,

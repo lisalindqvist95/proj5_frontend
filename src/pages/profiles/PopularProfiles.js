@@ -5,6 +5,10 @@ import Asset from "../../components/Asset";
 import { useProfileData } from "../../contexts/ProfileDataContext";
 import Profile from "./Profile";
 
+/** CREDIT: Adapted from the Code Institute Moments Tutorial Project
+ * https://github.com/Code-Institute-Solutions/moments/
+*/
+
 const PopularProfiles = ({ mobile }) => {
   const { popularProfiles } = useProfileData();
 

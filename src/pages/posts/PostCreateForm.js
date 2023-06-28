@@ -19,6 +19,10 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
+/** CREDIT: Adapted from the Code Institute Moments Tutorial Project
+ * https://github.com/Code-Institute-Solutions/moments/
+*/
+
 function PostCreateForm() {
   const [errors, setErrors] = useState({});
 

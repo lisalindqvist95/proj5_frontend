@@ -18,6 +18,10 @@ import {
 import axios from "axios";
 import { useRedirect } from "../../hooks/useRedirect";
 
+/** CREDIT: Adapted from the Code Institute Moments Tutorial Project
+ * https://github.com/Code-Institute-Solutions/moments/
+*/
+
 const SignUpForm = () => {
   useRedirect("loggedIn");
   const [signUpData, setSignUpData] = useState({

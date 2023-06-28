@@ -2,6 +2,10 @@ import React from "react";
 import { Spinner } from "react-bootstrap";
 import styles from "../styles/Asset.module.css";
 
+/** CREDIT: Adapted from the Code Institute Moments Tutorial Project
+ * https://github.com/Code-Institute-Solutions/moments/
+*/
+
 const Asset = ({ spinner, src, message }) => {
   return (
     <div className={`${styles.Asset} p-4`}>

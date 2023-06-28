@@ -2,6 +2,10 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useHistory } from "react-router";
 
+/** CREDIT: Adapted from the Code Institute Moments Tutorial Project
+ * https://github.com/Code-Institute-Solutions/moments/
+*/
+
 export const useRedirect = (userAuthStatus) => {
   const history = useHistory();
 
