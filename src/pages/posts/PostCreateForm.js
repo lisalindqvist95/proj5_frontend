@@ -25,9 +25,10 @@ function PostCreateForm() {
   const [postData, setPostData] = useState({
     title: "",
     content: "",
+    makeup: "",
     image: "",
   });
-  const { title, content, image } = postData;
+  const { title, content, makeup, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -56,6 +57,7 @@ function PostCreateForm() {
 
     formData.append("title", title);
     formData.append("content", content);
+    formData.append("makeup", makeup);
     formData.append("image", imageInput.current.files[0]);
 
     try {
@@ -93,6 +95,22 @@ function PostCreateForm() {
           rows={6}
           name="content"
           value={content}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.content?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+
+      <Form.Group>
+        <Form.Label>Makeup Products</Form.Label>
+        <Form.Control
+          as="textarea"
+          rows={6}
+          name="makeup"
+          value={makeup}
           onChange={handleChange}
         />
       </Form.Group>

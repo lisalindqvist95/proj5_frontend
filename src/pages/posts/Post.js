@@ -20,6 +20,7 @@ const Post = (props) => {
     pin_id,
     title,
     content,
+    makeup,
     image,
     updated_at,
     postPage,
@@ -132,6 +133,7 @@ const Post = (props) => {
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
         {content && <Card.Text>{content}</Card.Text>}
+        {makeup && <Card.Text>{makeup}</Card.Text>}
         <div className={styles.PostBar}>
           {is_owner ? (
             <OverlayTrigger

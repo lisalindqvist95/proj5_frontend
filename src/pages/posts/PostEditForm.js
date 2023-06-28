@@ -21,9 +21,10 @@ function PostEditForm() {
   const [postData, setPostData] = useState({
     title: "",
     content: "",
+    makeup: "",
     image: "",
   });
-  const { title, content, image } = postData;
+  const { title, content, makeup, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -35,7 +36,7 @@ function PostEditForm() {
         const { data } = await axiosReq.get(`/posts/${id}/`);
         const { title, content, image, is_owner } = data;
 
-        is_owner ? setPostData({ title, content, image }) : history.push("/");
+        is_owner ? setPostData({ title, content, makeup, image }) : history.push("/");
       } catch (err) {
         console.log(err);
       }
@@ -67,6 +68,7 @@ function PostEditForm() {
 
     formData.append("title", title);
     formData.append("content", content);
+    formData.append("makeup", makeup);
 
     if (imageInput?.current?.files[0]) {
       formData.append("image", imageInput.current.files[0]);
@@ -116,14 +118,30 @@ function PostEditForm() {
         </Alert>
       ))}
 
+      <Form.Group>
+        <Form.Label>Makeup</Form.Label>
+        <Form.Control
+          as="textarea"
+          rows={6}
+          name="makeup"
+          value={makeup}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.content?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
         onClick={() => history.goBack()}
       >
-        cancel
+        Cancel
       </Button>
       <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        save
+        Save
       </Button>
     </div>
   );
