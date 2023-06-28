@@ -152,6 +152,76 @@ The responsiveness was tested using DevTools
 
 #### Manual Testing
 
+| **Element**                         | **Action**  | **Expected Result**                                       | **Pass/Fail** |
+|-------------------------------------|-------------|-----------------------------------------------------------|---------------|
+| _NavBar_                            |             |                                                           |               |
+|                                     |             |                                                           |               |
+| Logo                                | Click       | Redirect to homepage                                      | Pass          |
+| Home Link                           | Click       | Redirect to homepage                                      | Pass          |
+| Feed link                           | Click       | Redirect to following feed                                | Pass          |
+| Liked link                          | Click       | Redirect to liked feed                                    | Pass          |
+| Pinned link                         | Click       | Redirect to pinned feed                                   | Pass          |
+| Sign out link                       | Display     | Not visible for logged out user                           | Pass          |
+| Sign out link                       | Click       | Sign out user                                             | Pass          |
+| Sign in link                        | Display     | Not visible for logged in user                            | Pass          |
+| Sign in link                        | Click       | Sign in page                                              | Pass          |
+| Sign in: Correct user info          | Click       | Sign in user                                              | Pass          |
+| Sign in: Incorrect user info        | Click       | Don't sign in user, show error message                    | Pass          |
+| Sign up                             | Display     | Not visible for logged in user                            | Pass          |
+| Sign up: Correct user info          | Click       | Sign up user                                              | Pass          |
+| Sign up: Incorrect user info        | Click       | Display issue, do not sign up user                        | Pass          |
+|                                     |             |                                                           |               |
+|                                     |             |                                                           |               |
+| _Add Post_                          |             |                                                           |               |
+|                                     |             |                                                           |               |
+| Add post link                       | Display     | Only show for a logged in user                            | Pass          |
+| Add post link                       | Click       | Redirect to add post page                                 | Pass          |
+| Upload image link                   | Click       | Let user choose image to upload                           | Pass          |
+| Upload image link, image too big    | Click       | Let user know the image exceeds limit                     | Pass          |
+| Upload image link, correct size     | Click       | Upload image                                              | Pass          |
+| Change image                        | Click       | Let user choose a new image                               | Pass          |
+| Title                               | Add in form | Let user fill in a title                                  | Pass          |
+| Content                             | Add in form | Let user fill in content                                  | Pass          |
+| Makeup products                     | Add in form | Let user fill in content                                  | Pass          |
+| Product links                       | Add in form | Let user fill in content                                  | Pass          |
+| Create                              | Click       | Creates post                                              | Pass          |
+| Cancel                              | Click       | Cancel post, redirect back to previous page               | Pass          |
+|                                     |             |                                                           |               |
+|                                     |             |                                                           |               |
+| _Comments_                          |             |                                                           |               |
+|                                     |             |                                                           |               |
+| Leave a comment - logged in user    | Display     | Form to leave a comment                                   | Pass          |
+| Leave a comment - logged out user   | Display     | No form to leave a comment                                | Pass          |
+| Submit comment                      | Click       | Submit comment                                            | Pass          |
+| Edit comment - author               | Display     | Show button to edit comment                               | Pass          |
+| Edit comment - author               | Click       | Edit comment form                                         | Pass          |
+| Edit comment form - Save button     | Click       | Update comment                                            | Pass          |
+| Edit comment form - Cancel button   | Click       | Leave comment unedited                                    | Pass          |
+| Delete comment - author             | Display     | Show button to delete comment                             | Pass          |
+| Delete comment form - delete button | Click       | Delete comment                                            | Pass          |
+| Edit comment - Not author           | Display     | Don't show                                                | Pass          |
+| Delete comment - Not author         | Display     | Don't show                                                | Pass          |
+|                                     |             |                                                           |               |
+| _Homepage_                          |             |                                                           |               |
+|                                     |             |                                                           |               |
+| Pagination                          | Display     | Infinite scroll                                           | Pass          |
+|                                     |             |                                                           |               |
+|                                     |             |                                                           |               |
+| _Posts_                             |             |                                                           |               |
+| Comment                             | Click       | Redirect to post and show comments                        | Pass          |
+| Like - creator                      | Click       | Show message that you can't like your own posts           | Pass          |
+| Like - other user                   | Click       | Like post and add to liked feed                           | Pass          |
+| Like - logged out user              | Click       | Let user know they need to log in to like posts           | Pass          |
+| Pin - logged in user                | Click       | Pin post and add to pinned feed                           | Pass          |
+| Pin - logged out user               | Click       | Let user know they need to log in to pin posts            | Pass          |
+| Profile picture                     | Click       | Redirect to user profile                                  | Pass          |
+|                                     |             |                                                           |               |
+|                                     |             |                                                           |               |
+| _Profile_                           |             |                                                           |               |
+| Edit profile                        | Display     | Only show to logged in user on own profile                | Pass          |
+| Edit profile                        | Click       | Let user edit profile                                     | Pass          |
+| Follow                              | Display     | Only show to logged in user on other peoples profile      | Pass          |
+| Follow                              | Click       | Add user to following, show their posts in following feed | Pass          |
 
 ### Bugs
 
@@ -304,13 +374,15 @@ Bootstrap: CSS Framework for responsiveness and styling
 Tables Generator: Used to create markdown table
 
 ## Credits
-W3Schools
-Django Docs
-Bootstrap
-Stack Overflow
-Code Institute - Blog Walkthrough Project
-AliOKeeffe - Easy Eater Project
-Unsplash
-Adobe stock
+- [W3Schools](https://www.w3schools.com/)
+- [Django Docs](https://docs.djangoproject.com/en/4.0/) 
+- [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- [React JS](https://react.dev/learn)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Code Institute - Moments Walkthrough Project](https://github.com/Code-Institute-Solutions/moments/tree/304244f540308ff4dd3c961352f55a633a4b3bed)
+- [Unsplash](https://unsplash.com/)
+- [Adobe stock](https://stock.adobe.com/) 
+- [Tables Generator](https://www.tablesgenerator.com/markdown_tables): Used to create markdown table
+
 
 
