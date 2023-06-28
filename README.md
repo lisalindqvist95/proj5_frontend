@@ -346,10 +346,10 @@ Deploy at the bottom of the page
 Click View to view the deployed site.
 
 ## Languages
-Python
 HTML
 CSS
 Javascript
+React
 
 ## Frameworks & Libraries Used
 Django: Main framework used for the project
