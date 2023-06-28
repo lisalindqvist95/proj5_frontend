@@ -14,12 +14,12 @@ A user of Glimspe would most likely be someone who is interested in makeup and b
  - As a Site User, I can log in and out of my account so that it stays secure.
  - As a Site User I can see if I am logged in or out so that I know my status.
  - As a New User I can register for an account so that I can comment and like posts.
- - As a Site User I have an account where I can log in and like/comment on posts.
+ - As a Site User I have an account where I can log in and like, pin and comment on posts.
 
 ### User Navigation
  - As a Site User I can immediately easily find the navigation so that I can use the website with ease.
  - As a Site User, I can view a list of posts and scroll infanetly so that I don't have to click to the next page. 
- - As a Site User, I can click on the person who has posted to fin their profile and follow them. 
+ - As a Site User, I can click on the person who has posted to fid their profile and follow them. 
  - As a Site User I can easily find new people to follow so that I can make new friends and get new inspiration.
 
 ### Post Details
@@ -44,6 +44,7 @@ A user of Glimspe would most likely be someone who is interested in makeup and b
 ### User stories not yet implemented
 The following user stories haven't been made due to time constraints. It is intended that some or all of these user stories will be implemented at a later date.
 - As a Site User I can post several pictures to make a tutorial
+**- As a Site User there is a community tab for users to ask questions and respond to eachother.**
 
 ## Design
 
@@ -65,36 +66,70 @@ The project has a Post model wich allows the admin to create blogposts and a Com
 ## Testing
 
 ### User Story Testing
-As a Site Owner I can manage comments so that I can keep my blog a safe and respectful place
-The comments have to be approved by the site owner before they appear on the blog.
-As a Site Owner I have an account where I can log in and create/edit and delete blog posts
-Only the superuser can log in to the admin page and create, edit and delete blog posts.
-As a Site Owner I can log in and out of my account so that it stays secure.
-There is a login/out button in the navigation bar at the top.
-As a Site Owner I can see if I am logged in or out so that know my status
-The navigaton bar changes depending on if the user is logged in or not, a loggen in user has the option to log out and a logged out user has the option to log in or sign up.
-As a New User I can register for an account so that I can comment and like posts
-Only logged in users can comment and like posts, there is an option to sign up in the navigation bar for a logged out user.
-As a Site User I have an account where I can log in and like/comment on posts
-A user with an account can log in an like/comment on posts, the can also edit and delete their comments.
-As a Site User I can find a summery about who owns the blog, what content it has and why it exists so that I can decide if it’s something I want to read
-The blog has a sidebar with an about section so that the user can easaly find info about the owner.
-As a Site User I can see what the price range is for the pizza so that I know if it’s something I’m interested in
-Every post contains information about the price-range, which is part of the post model.
-As a Site User I can see the name and location of the restaurant so that I know where to go if I want to try it myself.
-Every post contains information about the location, which is part of the post model.
-As a Site User I can see the name of the pizza so that I can order it myself
-Every post contains information about the pizza, which is part of the post model.
-As a Site User I can log in and out of my account so that it stays secure
-Login and out function is located in the navigation bar so that the user easily can log out.
-As a Site User I can see if I am logged in or out so that I know my status
-The navigaton bar changes depending on if the user is logged in or not, a loggen in user has the option to log out and a logged out user has the option to log in or sign up.
-As a Site User I can immediately easily find the navigation so that I can use the website with ease
-The navigation bar is placed at the top of the blog for the user to easily find.
-As a Site User I can view a list of blog posts so that I can choose which post to read
-The homepage is pagineted to show a list of posts with images and titles for the user to choose between.
-As a Site User I can click on the blog post I want to read so that can choose to read the full post and comments left by other users
-If the users clicks on a post on the home-page it will take them to the blogpost in the post-detail view.
+
+## User Profile
+ - As a Site User I have an account where I can log in and create, edit and delete posts.
+ A user can choose to create an account from the menu at the top of the page and a logged in user can create edit and delete posts.
+
+ - As a Site User, I can log in and out of my account so that it stays secure.
+ A site user can log in and out from the menu at the top of the page, if the user is inactive on the page they will be logged out automatically. 
+
+ - As a Site User I can see if I am logged in or out so that I know my status.
+The status of the user can be found in the menu at the top of the page. 
+
+ - As a New User I can register for an account so that I can comment and like posts.
+A new user can register for an account from the menu at the top of the page or from a link at the sign-in page. 
+
+ - As a Site User I have an account where I can log in and like, pin andcomment on posts.
+ A logged in user is able to comment, like and pin posts. 
+
+## User Navigation
+ - As a Site User I can immediately easily find the navigation so that I can use the website with ease.
+The navigation bar is at the top of the page at all times so that it's easy to find. 
+
+ - As a Site User, I can view a list of posts and scroll infanetly so that I don't have to click to the next page. 
+Users can scroll infanetly to see all posts. 
+
+ - As a Site User, I can click on the person who has posted to find their profile and follow them. 
+ If you click on a post, a person in the most followed list or a comment it will take you to that persons profile. 
+
+ - As a Site User I can easily find new people to follow so that I can make new friends and get new inspiration.
+ Users can find all posts on the site in the normal feed on the homepage or they can find new people to follow in the "most followed" list. 
+
+## Post Details
+ - As a Site User I can see the comments, likes and pins on all posts so that I know how other people are interacting with the post.
+Comments, likes and pins are displayed under each post. 
+
+ - As a Site User I can clearly see the image and text of the post so that it's easy for me to consume the content. 
+The image of the post is large enough to see and the text is paced below it. Posts are seperated with a space between them so that users aren't confused about what text is related to which image. 
+
+ - As a Site User I can like posts of other users so that I can show my support.
+ A logged in user is able to like posts of other users. 
+
+ - As a Site User I can comment on posts so that I can ask qusetions and show support to other creators.
+ A logged in user is able to comment on all posts. 
+
+ - As a Site User I can pin posts I want to save so that I can find them later
+ A logged in user is able to pin all posts, even their own if they want to save their own content for inspiration. 
+
+## New Post
+ - As a Site User I can upload an image so that others can see my creations. 
+ A logged in user can create a new post and choose an image from their computer library. 
+
+ - As a Site user I can add a title and text to my post so that I can describe my image.¨
+ A logged in user can create a new post and add text to that post. 
+
+ ## Edits
+ - As a Site User I can edit my post so that I can change any mistakes. 
+A logged in user can edit their own posts, not other peoples posts. 
+
+ - As a Site User I can edit my comments so that I can change any mistakes.
+ A logged in user can edit their own comments, not other peoples comments. 
+
+ ## Filter
+ - As a Site User I can serach for posts so that I can find new things or specific things I'm looking for.
+ Their is a search bar at the top of the page where the user can search for titles or other users to find posts.
+
 
 ### Validator Testing
 
@@ -120,14 +155,14 @@ The responsiveness was tested using DevTools
 
 ### Bugs
 
-Placeholder image not showing
-The placeholder image was not showing, it was because it had been updated in the cloudinary storage which updates its unique link. It worked when the code was updated with the new link.
+Log out function does not work
+At first there was a bug which made it possible to log in but not out. This was fixed by rewriting some of the code for that function so the bug was probobly due to a spelling mistake. 
 
-NoReverseMatch
-NoReverseMatch came up as an error when trying the edit comment button, by checking Stack Overflow the issue could be debugged and a typo in the views file was found.
 
-Layout in PostDetail
-The layout in PostDetail was accidentally changed so that the comments and likes section moved to where it was not supposed to be, it was fixed by going through the code and fixing the syntax errors.
+
+
+
+
 
 ### Unfixed bugs
 There are no known unfixed bugs.
