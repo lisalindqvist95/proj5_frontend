@@ -34,7 +34,7 @@ function PostEditForm() {
     const handleMount = async () => {
       try {
         const { data } = await axiosReq.get(`/posts/${id}/`);
-        const { title, content, image, is_owner } = data;
+        const { title, content, makeup, image, is_owner } = data;
 
         is_owner ? setPostData({ title, content, makeup, image }) : history.push("/");
       } catch (err) {

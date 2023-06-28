@@ -26,9 +26,10 @@ function PostCreateForm() {
     title: "",
     content: "",
     makeup: "",
+    makeup_links: "",
     image: "",
   });
-  const { title, content, makeup, image } = postData;
+  const { title, content, makeup, makeup_links, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -58,6 +59,7 @@ function PostCreateForm() {
     formData.append("title", title);
     formData.append("content", content);
     formData.append("makeup", makeup);
+    formData.append("makeup_links", makeup_links);
     formData.append("image", imageInput.current.files[0]);
 
     try {
@@ -119,6 +121,22 @@ function PostCreateForm() {
           {message}
         </Alert>
       ))}
+
+      <Form.Group>
+        <Form.Label>Product Links</Form.Label>
+        <Form.Control
+          type="list"
+          name="makeup_links"
+          value={makeup_links}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.title?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+
 
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
