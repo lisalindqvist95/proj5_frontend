@@ -15,61 +15,52 @@ A user of Glimspe would most likely be someone who is interested in makeup and b
  - As a Site User I can see if I am logged in or out so that I know my status.
  - As a New User I can register for an account so that I can comment and like posts.
  - As a Site User I have an account where I can log in and like/comment on posts.
- - As a Site User I can like posts of other users so that I can show my support.
- - As a Site User I can comment on posts so that I can ask qusetions and show support to other creators.
- - As a Site User I can edit my comments so that I can change any mistakes.
- - As a Site User I can pin posts I want to save so that I can find them later.
 
 ### User Navigation
  - As a Site User I can immediately easily find the navigation so that I can use the website with ease.
  - As a Site User, I can view a list of posts and scroll infanetly so that I don't have to click to the next page. 
  - As a Site User, I can click on the person who has posted to fin their profile and follow them. 
- - As a Site User I can easyly find new people to follow so that I can make new friends and get new inspiration.
-
-
-
-
-
-
-
+ - As a Site User I can easily find new people to follow so that I can make new friends and get new inspiration.
 
 ### Post Details
- - As a Site User I can see the name and location of the restaurant so that I know where to go if I want to try it myself.
- - As a Site User I can see the name of the pizza so that I can order it myself.
+ - As a Site User I can see the comments, likes and pins on all posts so that I know how other people are interacting with the post. 
+ - As a Site User I can clearly see the image and text of the post so that it's easy for me to consume the content. 
+ - As a Site User I can like posts of other users so that I can show my support.
+ - As a Site User I can comment on posts so that I can ask qusetions and show support to other creators.
+ - As a Site User I can pin posts I want to save so that I can find them later
 
+### New Post
+ - As a Site User I can upload an image so that others can see my creations. 
+ - As a Site user I can add a title and text to my post so that I can describe my image.
 
-### About Blog
-As a Site User I can find a summery about who owns the blog, what content it has and why it exists so that I can decide if it’s something I want to read.
+ ### Edits
+ - As a Site User I can edit my post so that I can change any mistakes. 
+ - As a Site user I can add a title and text to my post so that I can describe my image.
+ - As a Site User I can edit my comments so that I can change any mistakes.
+
+ ### Filter
+ - As a Site User I can serach for posts so that I can find new things or specific things I'm looking for.
 
 ### User stories not yet implemented
 The following user stories haven't been made due to time constraints. It is intended that some or all of these user stories will be implemented at a later date.
-As a Site User I can change the order of the blog posts depending on what I’m looking for.
-As a Site User, I can search and filter blog posts so that I can find what I’m looking for.
-As a Site User i can bookmark a post so that I can easily find it later.
-As a Site uUer I can see a scale of different categories such as crust thickness or cheese amount.
+- As a Site User I can post several pictures to make a tutorial
 
 ## Design
 
 ### Colour Pallete
 
-The colour pallete on the site was chosen based on the header image, the colours are also often found in food and on pizza toppings. They were chosen to invoke a fresh feeling for the user as well as have a good contrast to make the site accessible for the user.
-
-### Imagery
-The static images on the the site were chosen to match the colour palette and to give the blog a more personal feeling. The blog post images are uploaded with the post and should contain a photo of the pizza being reviwed.
-
-### Fonts
-The fonts used are Plus Jakarta Sans and Sono. Sono was chosen for its familiar and playful feeling while still being readable. Plus Jakarta Sans was chosen to contrast Sono and make the logo stand out. The fonts were imported via Google Fonts.
+The colour pallete on the site was chosen based on early 2000´s makeup computer games which the target group might recognize to give the site a playful feeling. The colors have been muted a bit in order to make the site feel more mature. 
 
 ### Wireframes
 The first wireframes were rough sketches made by hand on paper for the layout.
 
 ## Agile method
-To manage the user stories for this project Github project was used. The project board can be found here.
+To manage the user stories for this project Github project was used. The project board can be found *******HERE.******
 
 ## Data Model
 This Project is based around Object-Oriented Programming.
-It is built with Django’s Class-Based Generic Views and Django AllAuth is used as the authentication system.
-The project has a Post model wich allows the admin to create blogposts and a Comment model which allows users to comment on posts.
+***It is built with Django’s Class-Based Generic Views and Django AllAuth is used as the authentication system.
+The project has a Post model wich allows the admin to create blogposts and a Comment model which allows users to comment on posts.***
 
 ## Testing
 
