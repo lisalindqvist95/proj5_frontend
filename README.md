@@ -228,10 +228,8 @@ The responsiveness was tested using DevTools
 Log out function does not work
 At first there was a bug which made it possible to log in but not out. This was fixed by rewriting some of the code for that function so the bug was probobly due to a spelling mistake. 
 
-
-
-
-
+Pin does not work
+The pinning function did not work and resulted in a Error 500 message. This was resolved when the model was rewritten in the API, the issue was most likely due to a spelling mistake. 
 
 
 ### Unfixed bugs
@@ -240,14 +238,11 @@ There are no known unfixed bugs.
 ## Security Features and Defensive Design
 
 ### User Authentication
-Django's UserPassesTestMixin is used so that only users who created the comment edit/delete it.
+Only users who created the post or comment can edit/delete it.
 
 ### Form Validation
 The form won't submit if it contains empty or invalid data.
 
-### Database Security
-An env.py file is used to store the database url and secret key to prevent unwanted connections to the database.
-Cross-Site Request Forgery (CSRF) tokens are used on the forms on the site.
 
 ## Features
 
