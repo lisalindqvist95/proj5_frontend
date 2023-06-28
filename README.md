@@ -352,27 +352,19 @@ Javascript
 React
 
 ## Frameworks & Libraries Used
-Django: Main framework used for the project
-Django-allauth: Authentication library used for the project
-PostgreSQL Used as database
-Heroku: Used for deployement
-Chrome Dev Tools: Used to test responsiveness
-Font Awesome: Used for icons
-GitHub: Used for version control and agile tool
-Google Fonts: Used for fonts
-W3C: Used to validate HTML & CSS
-PEP8 Online: used to validate Python code
-Summernote: Editor to allow users to edit their posts
-Crispy Forms: used for Django Forms
-Cloudinary: Image hosting service
-Bootstrap: CSS Framework for responsiveness and styling
-Tables Generator: Used to create markdown table
+ - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/): Used to test responsiveness
+ - [Font Awesome](https://fontawesome.com/): Used for icons
+ - [GitHub](https://github.com/): Used for version control and agile tool 
+ - [Google Fonts](https://fonts.google.com/): Used for fonts
+ - [W3C](https://www.w3.org/): Used to validate HTML & CSS 
+ - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/): CSS Framework for responsiveness and styling
+ - [React JS](https://react.dev/learn)
+
 
 ## Credits
 - [W3Schools](https://www.w3schools.com/)
 - [Django Docs](https://docs.djangoproject.com/en/4.0/) 
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-- [React JS](https://react.dev/learn)
 - [Stack Overflow](https://stackoverflow.com/)
 - [Code Institute - Moments Walkthrough Project](https://github.com/Code-Institute-Solutions/moments/)
 - [Unsplash](https://unsplash.com/)
