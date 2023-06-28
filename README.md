@@ -182,30 +182,63 @@ Cross-Site Request Forgery (CSRF) tokens are used on the forms on the site.
 ## Features
 
 ### Logo
+![Logo](media/images/logo.png)
+The logo is placed in the top left corner of the page so that the user immediately knows what website they are visiting. 
 
 ### Navigaton
+![Navbar](media/images/navbar.png)
+The navigation bar is placed in the top of the page to make it easier for the user to navigate the website. 
 
 ### Posts Feed
+![Posts](media/images/posts.png)
+The post feed contains all posts made on the website for users to find new people to follow and posts to like. The page has infinate scroll so that the user doesn't have to click through different pages. 
 
 ### Following Feed
+![Following](media/images/following.png)
+The "following feed" contains the posts from the people a user follows.
 
 ### Most Followed
+![Most followed](media/images/most_followed.png)
+The most followed box contains information about who the most followed users are.
 
 ### Comment
+![Comments](media/images/comment.png)
+![Comments](media/images/comment2.png)
+The comments can be found underneath each post. The amount of comments is displayed so that the user knows if there are more comments on the post before clicking on the post. Any logged in user is able to comment on posts and edit/delete their if needed.
 
 ### Liked Posts
+![Liked](media/images/liked.png)
+The posts a user likes will be saved in the "liked posts" feed. 
 
 ### Pinned Posts
+![Pinned](media/images/pinned.png)
+The posts a user likes will be saved in the "pinned posts" feed so that the user easily can find them later. 
 
 ### Search Content
+![Search bar](media/images/searchbar.png)
+The search bar is placed at the top of the page so that it's easy to find.
 
 ### User Profile
+![User profile](media/images/user_profile.png)
+The user profile contains a profile image and text space for a description of the user. It also contains all the posts of the user for and information about how many people they follow/follow them. 
 
 ### New Post
+![New post](media/images/new_post.png)
+The new post feature lets the user choose an image and add a title, description, makeup products and links.
 
 ### Log In/Out
+![Login/out](media/images/login.png)
+The ststus of the user can be found in the navbar. A logged in user has the choice to sign out and a logged out user has the choice to sign in or possibly sign up if they don't already have an account. 
 
 ### Sign Up
+![Signup](media/images/sign_up.png)
+A logged out user has the choice to sign up for an account so that the can make their own posts and follow, pin, like and comment on on posts. 
+
+### React JS Components
+
+This project is built using React JS components which breaks up the code inte different elements that can be used across the site in a variety of applications so that the same code does not have to be duplicated several times. It also helps with developing since you can updtae individual components indepentendly. The re-use of components across the site also offers a better user experience since it provides a consistency. 
+
+This project reuses the user avatar, navbar menu, dropdown menu, loading spinner and "not found" message across all parts of the site. 
 
 ## Deployment
 This project was depolyed via Heroku from the GitHub repository. See the steps taken below:
