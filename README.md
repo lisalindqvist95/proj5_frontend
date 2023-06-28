@@ -18,7 +18,7 @@ A user of Glimspe would most likely be someone who is interested in makeup and b
 
 ### User Navigation
  - As a Site User I can immediately easily find the navigation so that I can use the website with ease.
- - As a Site User, I can view a list of posts and scroll infanetly so that I don't have to click to the next page. 
+ - As a Site User, I can view a list of posts and scroll infinitely so that I don't have to click to the next page. 
  - As a Site User, I can click on the person who has posted to fid their profile and follow them. 
  - As a Site User I can easily find new people to follow so that I can make new friends and get new inspiration.
 
@@ -87,7 +87,7 @@ A new user can register for an account from the menu at the top of the page or f
  - As a Site User I can immediately easily find the navigation so that I can use the website with ease.
 The navigation bar is at the top of the page at all times so that it's easy to find. 
 
- - As a Site User, I can view a list of posts and scroll infanetly so that I don't have to click to the next page. 
+ - As a Site User, I can view a list of posts and scroll infinitely so that I don't have to click to the next page. 
 Users can scroll infanetly to see all posts. 
 
  - As a Site User, I can click on the person who has posted to find their profile and follow them. 
