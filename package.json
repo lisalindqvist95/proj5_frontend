@@ -14,13 +14,13 @@
     "react-dom": "^17.0.2",
     "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "heroku-prebuild": "npm install -g serve",
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "start": "react-scripts",
+    "build": "react-scripts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,8 +43,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.43.0",
-    "eslint-plugin-react": "^7.25.3",
     "msw": "^0.35.0"
   },
   "engines": {
