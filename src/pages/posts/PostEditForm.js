@@ -25,10 +25,9 @@ function PostEditForm() {
   const [postData, setPostData] = useState({
     title: "",
     content: "",
-    makeup_products: "",
     image: "",
   });
-  const { title, content, makeup_products, image } = postData;
+  const { title, content, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -38,9 +37,9 @@ function PostEditForm() {
     const handleMount = async () => {
       try {
         const { data } = await axiosReq.get(`/posts/${id}/`);
-        const { title, content, makeup_products, image, is_owner } = data;
+        const { title, content, image, is_owner } = data;
 
-        is_owner ? setPostData({ title, content, image, makeup_products }) : history.push("/");
+        is_owner ? setPostData({ title, content, image, }) : history.push("/");
       } catch (err) {
         console.log(err);
       }
@@ -72,7 +71,6 @@ function PostEditForm() {
 
     formData.append("title", title);
     formData.append("content", content);
-    formData.append("makeup_products", makeup_products);
 
     if (imageInput?.current?.files[0]) {
       formData.append("image", imageInput.current.files[0]);
@@ -117,22 +115,6 @@ function PostEditForm() {
         />
       </Form.Group>
       {errors?.content?.map((message, idx) => (
-        <Alert variant="warning" key={idx}>
-          {message}
-        </Alert>
-      ))}
-
-      <Form.Group>
-        <Form.Label>Makeup Products</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={4}
-          name="makeup_products"
-          value={makeup_products}
-          onChange={handleChange}
-        />
-      </Form.Group>
-      {errors?.makeup_products?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
