@@ -44,7 +44,8 @@ A user of Glimspe would most likely be someone who is interested in makeup and b
 ### User stories not yet implemented
 The following user stories haven't been made due to time constraints. It is intended that some or all of these user stories will be implemented at a later date.
 - As a Site User I can post several pictures to make a tutorial
-**- As a Site User there is a community tab for users to ask questions and respond to eachother.**
+- As a Site User there is a community tab for users to ask questions and respond to each other
+- As a site user I can reply to comments so that it's easier to ask questions
 
 ## Design
 
@@ -56,12 +57,7 @@ The colour pallete on the site was chosen based on early 2000´s makeup computer
 The first wireframes were rough sketches made by hand on paper for the layout.
 
 ## Agile method
-To manage the user stories for this project Github project was used. The project board can be found *******HERE.******
-
-## Data Model
-This Project is based around Object-Oriented Programming.
-***It is built with Django’s Class-Based Generic Views and Django AllAuth is used as the authentication system.
-The project has a Post model wich allows the admin to create blogposts and a Comment model which allows users to comment on posts.***
+To manage the user stories for this project Github project was used. The project board can be found [here](https://github.com/users/lisalindqvist95/projects/6).
 
 ## Testing
 
@@ -133,14 +129,8 @@ A logged in user can edit their own posts, not other peoples posts.
 
 ### Validator Testing
 
-#### HTML
-All HTML pages were run through the W3C HTML Validator and all errors where corrected.
-
 #### CSS
 The CSS passed through the official W3C CSS Validator.
-
-#### Python
-All Python files passed through Pep8.
 
 #### Browser Testing
 The website is tested on the commonly used browsers: Chrome, Safari, Edge, Firefox and Opera
