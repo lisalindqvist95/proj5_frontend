@@ -35,5 +35,9 @@
   }
   
   .PinOutline:hover {
+    color: #ca037d;;
+  }
+
+  .PinOutline {
     color: #d063a6;
   }

@@ -163,11 +163,11 @@ const Post = (props) => {
           {likes_count}
           { pin_id ? (
             <span onClick={handleUnpin}>
-               <i className={`fa-solid fa-thumbtack ${styles.Thumbtack}`} />
+               <i className={`fa-solid fa-thumbtack ${styles.Pin}`} />
             </span>
           ) : currentUser ? (
             <span onClick={handlePin}>
-              <i className={`fa-solid fa-thumbtack ${styles.ThumbtackOutline}`} />
+              <i className={`fa-solid fa-thumbtack ${styles.PinOutline}`} />
             </span>
           ) : (
             <OverlayTrigger

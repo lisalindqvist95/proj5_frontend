@@ -31,10 +31,11 @@ function PostCreateForm() {
     content: "",
     image: "",
   });
-  const { title, content, image } = postData;
+  const { title, content, image, } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
+
 
   const handleChange = (event) => {
     setPostData({
