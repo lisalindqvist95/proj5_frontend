@@ -126,7 +126,6 @@ function PostEditForm() {
         <Form.Label>Products</Form.Label>
         <Form.Control
           as="textarea"
-          id="products"
           rows={4}
           name="products"
           value={products}
