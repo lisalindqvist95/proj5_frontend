@@ -30,9 +30,9 @@ function PostCreateForm() {
     title: "",
     content: "",
     image: "",
-    makeup_products: "",
+    products: "",
   });
-  const { title, content, image, makeup_products } = postData;
+  const { title, content, image, products } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -62,7 +62,7 @@ function PostCreateForm() {
 
     formData.append("title", title);
     formData.append("content", content);
-    formData.append("makeup_products", makeup_products);
+    formData.append("products", products);
     formData.append("image", imageInput.current.files[0]);
 
     try {
@@ -110,17 +110,17 @@ function PostCreateForm() {
       ))}
 
       <Form.Group>
-        <Form.Label>Makeup Products</Form.Label>
+        <Form.Label>Products</Form.Label>
         <Form.Control
           as="textarea"
-          id="makeup_products"
+          id="products"
           rows={4}
-          name="makeup_products"
-          value={makeup_products}
+          name="products"
+          value={products}
           onChange={handleChange}
         />
       </Form.Group>
-      {errors?.makeup_products?.map((message, idx) => (
+      {errors?.products?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
