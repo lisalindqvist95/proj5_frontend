@@ -254,7 +254,8 @@ Posts not working
 
 
 ### Unfixed bugs
-There are no known unfixed bugs.
+Log in Safari
+- In Safari there is an issue with the sign in unless the user enables cross-website tracking. This is due to the DRF and React app existing on different servers, the issue can only be fixed by the user changing their settings in their browser. 
 
 ## Security Features and Defensive Design
 
