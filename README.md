@@ -1,7 +1,10 @@
 # Glimpse
+![Mockup](media/images/mockup.jpg)
 
 ## Project Goals:
-Glimpse is a content sharing app for makeup-artists and enthusiasts to share content. The users are able to follow each other, like each others content and pin things for later. The goal for the user is to find inspiration, share their work and find other like-minded people.
+Glimpse is a content sharing app for makeup-artists and enthusiasts to share content. The users are able to follow each other, like each others content and pin things for later. The goal for the user is to find inspiration, share their work and find other like-minded people. You can find the live project [here](https://github.com/users/lisalindqvist95/projects/6).
+
+API can be found [here](https://github.com/lisalindqvist95/proj5).
 
 ## UX
 
@@ -55,6 +58,13 @@ The colour pallete on the site was chosen based on early 2000´s makeup computer
 
 ### Wireframes
 The first wireframes were rough sketches made by hand on paper for the layout.
+![Wireframe](media/images/wireframe1.png)
+![Wireframe](media/images/wireframe2.png)
+![Wireframe](media/images/wireframe3.png)
+
+A second wireframe was made in InDesign to see the colors and fonts.
+![Wireframe](media/images/wireframe_ind.png)
+
 
 ## Agile method
 To manage the user stories for this project Github project was used. The project board can be found [here](https://github.com/users/lisalindqvist95/projects/6).
