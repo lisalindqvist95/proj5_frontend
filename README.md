@@ -306,7 +306,7 @@ A logged out user has the choice to sign up for an account so that the can make 
 
 This project is built using React JS components which breaks up the code inte different elements that can be used across the site in a variety of applications so that the same code does not have to be duplicated several times. It also helps with developing since you can updtae individual components indepentendly. The re-use of components across the site also offers a better user experience since it provides a consistency. 
 
-This project reuses the user avatar, navbar menu, dropdown menu, loading spinner and "not found" message across all parts of the site. 
+This project reuses the user avatar, navbar menu, dropdown menu and "not found" message across all parts of the site. 
 
 ## Deployment
 This project was depolyed via Heroku from the GitHub repository. See the steps taken below:
