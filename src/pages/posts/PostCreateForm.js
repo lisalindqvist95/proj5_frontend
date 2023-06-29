@@ -113,6 +113,7 @@ function PostCreateForm() {
         <Form.Label>Makeup Products</Form.Label>
         <Form.Control
           as="textarea"
+          id="makeup_products"
           rows={4}
           name="makeup_products"
           value={makeup_products}

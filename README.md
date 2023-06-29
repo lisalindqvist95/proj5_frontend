@@ -58,9 +58,14 @@ The colour pallete on the site was chosen based on early 2000´s makeup computer
 
 ### Wireframes
 The first wireframes were rough sketches made by hand on paper for the layout.
+Home
 ![Wireframe](media/images/wireframe1.png)
+Sign in/up
 ![Wireframe](media/images/wireframe2.png)
+Profile
 ![Wireframe](media/images/wireframe3.png)
+New Post
+![Wireframe](media/images/wireframe4.png)
 
 A second wireframe was made in InDesign to see the colors and fonts.
 ![Wireframe](media/images/wireframe_ind.png)
@@ -143,7 +148,7 @@ A logged in user can edit their own posts, not other peoples posts.
 The CSS passed through the official W3C CSS Validator.
 
 #### JSX
-
+Passed through eslint with no significant issues.
 
 ### Browser Testing
 The website is tested on the commonly used browsers: Chrome, Safari, Edge, Firefox and Opera
@@ -229,10 +234,23 @@ The responsiveness was tested using DevTools
 ### Bugs
 
 Log out function does not work
-At first there was a bug which made it possible to log in but not out. This was fixed by rewriting some of the code for that function so the bug was probobly due to a spelling mistake. 
+- At first there was a bug which made it possible to log in but not out. This was fixed by rewriting some of the code for that function so the bug was probobly due to a spelling mistake. 
 
 Pin does not work
-The pinning function did not work and resulted in a Error 500 message. This was resolved when the model was rewritten in the API, the issue was most likely due to a spelling mistake. 
+- The pinning function did not work and resulted in a Error 500 message. This was resolved when the model was rewritten in the API, the issue was most likely due to a spelling mistake. 
+
+Deployed version not working
+- The deployed version was not working, this was fixed by adding
+
+"if 'CLIENT_ORIGIN' in os.environ:
+    CORS_ALLOWED_ORIGINS = [
+        os.environ.get('CLIENT_ORIGIN')
+    ]"
+
+in API. 
+
+Posts not working
+- There was an issue that the post function stopped working when new fields where added.  
 
 
 ### Unfixed bugs
@@ -263,7 +281,7 @@ The post feed contains all posts made on the website for users to find new peopl
 
 ### Following Feed
 ![Following](media/images/following.png)
-The "following feed" contains the posts from the people a user follows.
+The "following feed" contains the posts from the people a user follows. If the user isn't following anyone the feed will be empty and suggest that the user follows another user. 
 
 ### Most Followed
 ![Most followed](media/images/most_followed.png)
@@ -292,7 +310,7 @@ The user profile contains a profile image and text space for a description of th
 
 ### New Post
 ![New post](media/images/new_post.png)
-The new post feature lets the user choose an image and add a title, description, makeup products and links.
+The new post feature lets the user choose an image and add a title, description, makeup products witch possible links to the products used.
 
 ### Log In/Out
 ![Login/out](media/images/login.png)
