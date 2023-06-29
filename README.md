@@ -2,7 +2,7 @@
 ![Mockup](media/images/mockup.jpg)
 
 ## Project Goals:
-Glimpse is a content sharing app for makeup-artists and enthusiasts to share content. The users are able to follow each other, like each others content and pin things for later. The goal for the user is to find inspiration, share their work and find other like-minded people. You can find the live project [here](https://github.com/users/lisalindqvist95/projects/6).
+Glimpse is a content sharing app for makeup-artists and enthusiasts to share content. The users are able to follow each other, like each others content and pin things for later. The goal for the user is to find inspiration, share their work and find other like-minded people. You can find the live project [here](https://proj5-frontend.herokuapp.com).
 
 API can be found [here](https://github.com/lisalindqvist95/proj5).
 
