@@ -25,11 +25,10 @@ function PostEditForm() {
   const [postData, setPostData] = useState({
     title: "",
     content: "",
-    makeup: "",
-    makeup_links: "",
+    makeup_products: "",
     image: "",
   });
-  const { title, content, makeup, makeup_links, image } = postData;
+  const { title, content, makeup_products, image } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -39,9 +38,9 @@ function PostEditForm() {
     const handleMount = async () => {
       try {
         const { data } = await axiosReq.get(`/posts/${id}/`);
-        const { title, content, makeup, image, is_owner } = data;
+        const { title, content, makeup_products, image, is_owner } = data;
 
-        is_owner ? setPostData({ title, content, makeup, image }) : history.push("/");
+        is_owner ? setPostData({ title, content, image, makeup_products }) : history.push("/");
       } catch (err) {
         console.log(err);
       }
@@ -73,8 +72,7 @@ function PostEditForm() {
 
     formData.append("title", title);
     formData.append("content", content);
-    formData.append("makeup", makeup);
-    formData.append("makeup_links", makeup_links);
+    formData.append("makeup_products", makeup_products);
 
     if (imageInput?.current?.files[0]) {
       formData.append("image", imageInput.current.files[0]);
@@ -129,32 +127,17 @@ function PostEditForm() {
         <Form.Control
           as="textarea"
           rows={4}
-          name="makeup"
-          value={makeup}
+          name="makeup_products"
+          value={makeup_products}
           onChange={handleChange}
         />
       </Form.Group>
-      {errors?.content?.map((message, idx) => (
+      {errors?.makeup_products?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
       ))}
 
-      <Form.Group>
-        <Form.Label>Makeup Links</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={4}
-          name="makeup_links"
-          value={makeup_links}
-          onChange={handleChange}
-        />
-      </Form.Group>
-      {errors?.content?.map((message, idx) => (
-        <Alert variant="warning" key={idx}>
-          {message}
-        </Alert>
-      ))}
 
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}

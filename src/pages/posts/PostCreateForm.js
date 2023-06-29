@@ -30,8 +30,9 @@ function PostCreateForm() {
     title: "",
     content: "",
     image: "",
+    makeup_products: "",
   });
-  const { title, content, image, } = postData;
+  const { title, content, image, makeup_products } = postData;
 
   const imageInput = useRef(null);
   const history = useHistory();
@@ -61,6 +62,7 @@ function PostCreateForm() {
 
     formData.append("title", title);
     formData.append("content", content);
+    formData.append("makeup_products", makeup_products);
     formData.append("image", imageInput.current.files[0]);
 
     try {
@@ -102,6 +104,22 @@ function PostCreateForm() {
         />
       </Form.Group>
       {errors?.content?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+
+      <Form.Group>
+        <Form.Label>Makeup Products</Form.Label>
+        <Form.Control
+          as="textarea"
+          rows={4}
+          name="makeup_products"
+          value={makeup_products}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.makeup_products?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
@@ -156,7 +174,7 @@ function PostCreateForm() {
 
               <Form.File
                 id="image-upload"
-                accept="images/*"
+                accept="image/*"
                 onChange={handleChangeImage}
                 ref={imageInput}
               />

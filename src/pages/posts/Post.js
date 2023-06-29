@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "../../styles/Post.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import Media from "react-bootstrap/Media";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
@@ -24,6 +27,7 @@ const Post = (props) => {
     pin_id,
     title,
     content,
+    makeup_products,
     image,
     updated_at,
     postPage,
@@ -43,7 +47,6 @@ const Post = (props) => {
       await axiosRes.delete(`/posts/${id}/`);
       history.goBack();
     } catch (err) {
-      console.log(err);
     }
   };
 
@@ -59,7 +62,6 @@ const Post = (props) => {
         }),
       }));
     } catch (err) {
-      console.log(err);
     }
   };
 
@@ -75,7 +77,6 @@ const Post = (props) => {
         }),
       }));
     } catch (err) {
-      console.log(err);
     }
   };
 
@@ -91,7 +92,6 @@ const Post = (props) => {
         }),
       }));
     } catch (err) {
-      console.log(err);
     }
   };
 
@@ -136,6 +136,7 @@ const Post = (props) => {
       <Card.Body>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
         {content && <Card.Text>{content}</Card.Text>}
+        {makeup_products && <Card.Text>{makeup_products}</Card.Text>}
         <div className={styles.PostBar}>
           {is_owner ? (
             <OverlayTrigger
