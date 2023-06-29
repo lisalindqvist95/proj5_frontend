@@ -73,7 +73,7 @@ To manage the user stories for this project Github project was used. The project
 
 ### User Story Testing
 
-## User Profile
+### User Profile
  - As a Site User I have an account where I can log in and create, edit and delete posts.
  A user can choose to create an account from the menu at the top of the page and a logged in user can create edit and delete posts.
 
@@ -89,7 +89,7 @@ A new user can register for an account from the menu at the top of the page or f
  - As a Site User I have an account where I can log in and like, pin andcomment on posts.
  A logged in user is able to comment, like and pin posts. 
 
-## User Navigation
+### User Navigation
  - As a Site User I can immediately easily find the navigation so that I can use the website with ease.
 The navigation bar is at the top of the page at all times so that it's easy to find. 
 
@@ -102,7 +102,7 @@ Users can scroll infanetly to see all posts.
  - As a Site User I can easily find new people to follow so that I can make new friends and get new inspiration.
  Users can find all posts on the site in the normal feed on the homepage or they can find new people to follow in the "most followed" list. 
 
-## Post Details
+### Post Details
  - As a Site User I can see the comments, likes and pins on all posts so that I know how other people are interacting with the post.
 Comments, likes and pins are displayed under each post. 
 
@@ -118,21 +118,21 @@ The image of the post is large enough to see and the text is paced below it. Pos
  - As a Site User I can pin posts I want to save so that I can find them later
  A logged in user is able to pin all posts, even their own if they want to save their own content for inspiration. 
 
-## New Post
+### New Post
  - As a Site User I can upload an image so that others can see my creations. 
  A logged in user can create a new post and choose an image from their computer library. 
 
  - As a Site user I can add a title and text to my post so that I can describe my image.¨
  A logged in user can create a new post and add text to that post. 
 
- ## Edits
+ ### Edits
  - As a Site User I can edit my post so that I can change any mistakes. 
 A logged in user can edit their own posts, not other peoples posts. 
 
  - As a Site User I can edit my comments so that I can change any mistakes.
  A logged in user can edit their own comments, not other peoples comments. 
 
- ## Filter
+ ### Filter
  - As a Site User I can serach for posts so that I can find new things or specific things I'm looking for.
  Their is a search bar at the top of the page where the user can search for titles or other users to find posts.
 
@@ -142,15 +142,18 @@ A logged in user can edit their own posts, not other peoples posts.
 #### CSS
 The CSS passed through the official W3C CSS Validator.
 
-#### Browser Testing
+#### JSX
+
+
+### Browser Testing
 The website is tested on the commonly used browsers: Chrome, Safari, Edge, Firefox and Opera
 All features worked on the tested browsers
 
-#### Device Testing
+### Device Testing
 The website is responsive so that it can be used on different screen-sizes
 The responsiveness was tested using DevTools
 
-#### Manual Testing
+### Manual Testing
 
 | **Element**                         | **Action**  | **Expected Result**                                       | **Pass/Fail** |
 |-------------------------------------|-------------|-----------------------------------------------------------|---------------|
