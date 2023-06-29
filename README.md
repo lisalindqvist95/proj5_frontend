@@ -125,10 +125,10 @@ The image of the post is large enough to see and the text is paced below it. Pos
 
 ### New Post
  - As a Site User I can upload an image so that others can see my creations. 
- A logged in user can create a new post and choose an image from their computer library. 
+ A logged in user can create a new post and choose an image from their computer library. *Problem with SQL server has made this function unusable*
 
  - As a Site user I can add a title and text to my post so that I can describe my image.¨
- A logged in user can create a new post and add text to that post. 
+ A logged in user can create a new post and add text to that post. *Problem with SQL server has made this function unusable*
 
  ### Edits
  - As a Site User I can edit my post so that I can change any mistakes. 
@@ -247,15 +247,20 @@ Deployed version not working
         os.environ.get('CLIENT_ORIGIN')
     ]"
 
-in API. 
-
-Posts not working
-- There was an issue that the post function stopped working when new fields where added.  
+in API.  
 
 
 ### Unfixed bugs
 Log in Safari
-- In Safari there is an issue with the sign in unless the user enables cross-website tracking. This is due to the DRF and React app existing on different servers, the issue can only be fixed by the user changing their settings in their browser. 
+- In Safari there is an issue with the sign in unless the user enables cross-website tracking. This is due to the DRF and React app existing on different servers, the issue can only be fixed by the user changing their settings in their browser.
+
+New posts not working
+- There is an issue with the post function which stopped working when new fields where added. Trying to create a new post raises a 500 error message. 
+![Error](media/images/500_error.png)
+This might be due to some issues with updating the SQL fields for the new post function. The fields have been changed in the API but not in the SQL:
+![Error](media/images/SQL.png)
+![Error](media/images/post_model.png)
+The error has tried to be resolved by remaking migrations, clearing browsing data, and making a new SQL database but this issue has not yet been resolved. 
 
 ## Security Features and Defensive Design
 
